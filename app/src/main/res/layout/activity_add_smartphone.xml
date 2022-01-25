@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".addSmartphone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fourimage"
+            android:layout_marginTop="30dp"
+            android:layout_width="116dp"
+            android:layout_height="86dp"
+
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_phone_android_24" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textlocationaddcompany"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phone_name_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:layout_margin="10dp"
+
+            android:hint="phone name"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:drawableLeft="@drawable/ic_baseline_edit_attributes_24"
+
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addphonebtn"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/md_red_A400"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:gravity="center"
+                android:text="ajouter "
+
+                android:textColor="@color/md_white_1000"
+                android:textSize="11dp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
